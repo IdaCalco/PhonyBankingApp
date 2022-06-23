@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFF88D1928644E950015C721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D1828644E950015C721 /* AppDelegate.swift */; };
+		DFF88D1B28644E950015C721 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D1A28644E950015C721 /* SceneDelegate.swift */; };
+		DFF88D1D28644E950015C721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D1C28644E950015C721 /* ViewController.swift */; };
+		DFF88D2028644E950015C721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF88D1E28644E950015C721 /* Main.storyboard */; };
+		DFF88D2228644E960015C721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF88D2128644E960015C721 /* Assets.xcassets */; };
+		DFF88D2528644E960015C721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF88D2328644E960015C721 /* LaunchScreen.storyboard */; };
+		DFF88D3028644E960015C721 /* PhonyBankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D2F28644E960015C721 /* PhonyBankingAppTests.swift */; };
+		DFF88D3A28644E970015C721 /* PhonyBankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D3928644E970015C721 /* PhonyBankingAppUITests.swift */; };
+		DFF88D3C28644E970015C721 /* PhonyBankingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D3B28644E970015C721 /* PhonyBankingAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFF88D2C28644E960015C721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF88D0D28644E950015C721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF88D1428644E950015C721;
+			remoteInfo = PhonyBankingApp;
+		};
+		DFF88D3628644E970015C721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF88D0D28644E950015C721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF88D1428644E950015C721;
+			remoteInfo = PhonyBankingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFF88D1528644E950015C721 /* PhonyBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonyBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF88D1828644E950015C721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFF88D1A28644E950015C721 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DFF88D1C28644E950015C721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFF88D1F28644E950015C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFF88D2128644E960015C721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFF88D2428644E960015C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFF88D2628644E960015C721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF88D2B28644E960015C721 /* PhonyBankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonyBankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF88D2F28644E960015C721 /* PhonyBankingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonyBankingAppTests.swift; sourceTree = "<group>"; };
+		DFF88D3528644E970015C721 /* PhonyBankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonyBankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF88D3928644E970015C721 /* PhonyBankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonyBankingAppUITests.swift; sourceTree = "<group>"; };
+		DFF88D3B28644E970015C721 /* PhonyBankingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonyBankingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFF88D1228644E950015C721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D2828644E960015C721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D3228644E970015C721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFF88D0C28644E950015C721 = {
+			isa = PBXGroup;
+			children = (
+				DFF88D1728644E950015C721 /* PhonyBankingApp */,
+				DFF88D2E28644E960015C721 /* PhonyBankingAppTests */,
+				DFF88D3828644E970015C721 /* PhonyBankingAppUITests */,
+				DFF88D1628644E950015C721 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFF88D1628644E950015C721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF88D1528644E950015C721 /* PhonyBankingApp.app */,
+				DFF88D2B28644E960015C721 /* PhonyBankingAppTests.xctest */,
+				DFF88D3528644E970015C721 /* PhonyBankingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFF88D1728644E950015C721 /* PhonyBankingApp */ = {
+			isa = PBXGroup;
+			children = (
+				DFF88D1828644E950015C721 /* AppDelegate.swift */,
+				DFF88D1A28644E950015C721 /* SceneDelegate.swift */,
+				DFF88D1C28644E950015C721 /* ViewController.swift */,
+				DFF88D1E28644E950015C721 /* Main.storyboard */,
+				DFF88D2128644E960015C721 /* Assets.xcassets */,
+				DFF88D2328644E960015C721 /* LaunchScreen.storyboard */,
+				DFF88D2628644E960015C721 /* Info.plist */,
+			);
+			path = PhonyBankingApp;
+			sourceTree = "<group>";
+		};
+		DFF88D2E28644E960015C721 /* PhonyBankingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF88D2F28644E960015C721 /* PhonyBankingAppTests.swift */,
+			);
+			path = PhonyBankingAppTests;
+			sourceTree = "<group>";
+		};
+		DFF88D3828644E970015C721 /* PhonyBankingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF88D3928644E970015C721 /* PhonyBankingAppUITests.swift */,
+				DFF88D3B28644E970015C721 /* PhonyBankingAppUITestsLaunchTests.swift */,
+			);
+			path = PhonyBankingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFF88D1428644E950015C721 /* PhonyBankingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF88D3F28644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingApp" */;
+			buildPhases = (
+				DFF88D1128644E950015C721 /* Sources */,
+				DFF88D1228644E950015C721 /* Frameworks */,
+				DFF88D1328644E950015C721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhonyBankingApp;
+			productName = PhonyBankingApp;
+			productReference = DFF88D1528644E950015C721 /* PhonyBankingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFF88D2A28644E960015C721 /* PhonyBankingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF88D4228644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingAppTests" */;
+			buildPhases = (
+				DFF88D2728644E960015C721 /* Sources */,
+				DFF88D2828644E960015C721 /* Frameworks */,
+				DFF88D2928644E960015C721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF88D2D28644E960015C721 /* PBXTargetDependency */,
+			);
+			name = PhonyBankingAppTests;
+			productName = PhonyBankingAppTests;
+			productReference = DFF88D2B28644E960015C721 /* PhonyBankingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFF88D3428644E970015C721 /* PhonyBankingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF88D4528644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingAppUITests" */;
+			buildPhases = (
+				DFF88D3128644E970015C721 /* Sources */,
+				DFF88D3228644E970015C721 /* Frameworks */,
+				DFF88D3328644E970015C721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF88D3728644E970015C721 /* PBXTargetDependency */,
+			);
+			name = PhonyBankingAppUITests;
+			productName = PhonyBankingAppUITests;
+			productReference = DFF88D3528644E970015C721 /* PhonyBankingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFF88D0D28644E950015C721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DFF88D1428644E950015C721 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					DFF88D2A28644E960015C721 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DFF88D1428644E950015C721;
+					};
+					DFF88D3428644E970015C721 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DFF88D1428644E950015C721;
+					};
+				};
+			};
+			buildConfigurationList = DFF88D1028644E950015C721 /* Build configuration list for PBXProject "PhonyBankingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFF88D0C28644E950015C721;
+			productRefGroup = DFF88D1628644E950015C721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFF88D1428644E950015C721 /* PhonyBankingApp */,
+				DFF88D2A28644E960015C721 /* PhonyBankingAppTests */,
+				DFF88D3428644E970015C721 /* PhonyBankingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFF88D1328644E950015C721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF88D2528644E960015C721 /* LaunchScreen.storyboard in Resources */,
+				DFF88D2228644E960015C721 /* Assets.xcassets in Resources */,
+				DFF88D2028644E950015C721 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D2928644E960015C721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D3328644E970015C721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFF88D1128644E950015C721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF88D1D28644E950015C721 /* ViewController.swift in Sources */,
+				DFF88D1928644E950015C721 /* AppDelegate.swift in Sources */,
+				DFF88D1B28644E950015C721 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D2728644E960015C721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF88D3028644E960015C721 /* PhonyBankingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF88D3128644E970015C721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF88D3C28644E970015C721 /* PhonyBankingAppUITestsLaunchTests.swift in Sources */,
+				DFF88D3A28644E970015C721 /* PhonyBankingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFF88D2D28644E960015C721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF88D1428644E950015C721 /* PhonyBankingApp */;
+			targetProxy = DFF88D2C28644E960015C721 /* PBXContainerItemProxy */;
+		};
+		DFF88D3728644E970015C721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF88D1428644E950015C721 /* PhonyBankingApp */;
+			targetProxy = DFF88D3628644E970015C721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFF88D1E28644E950015C721 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF88D1F28644E950015C721 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFF88D2328644E960015C721 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF88D2428644E960015C721 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFF88D3D28644E970015C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFF88D3E28644E970015C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFF88D4028644E970015C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhonyBankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFF88D4128644E970015C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhonyBankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFF88D4328644E970015C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhonyBankingApp.app/PhonyBankingApp";
+			};
+			name = Debug;
+		};
+		DFF88D4428644E970015C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhonyBankingApp.app/PhonyBankingApp";
+			};
+			name = Release;
+		};
+		DFF88D4628644E970015C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhonyBankingApp;
+			};
+			name = Debug;
+		};
+		DFF88D4728644E970015C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 647CK5J8P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ida.PhonyBankingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhonyBankingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFF88D1028644E950015C721 /* Build configuration list for PBXProject "PhonyBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF88D3D28644E970015C721 /* Debug */,
+				DFF88D3E28644E970015C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF88D3F28644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF88D4028644E970015C721 /* Debug */,
+				DFF88D4128644E970015C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF88D4228644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF88D4328644E970015C721 /* Debug */,
+				DFF88D4428644E970015C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF88D4528644E970015C721 /* Build configuration list for PBXNativeTarget "PhonyBankingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF88D4628644E970015C721 /* Debug */,
+				DFF88D4728644E970015C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFF88D0D28644E950015C721 /* Project object */;
+}
