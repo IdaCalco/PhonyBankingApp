@@ -4,11 +4,18 @@
 //
 //  Created by Segond von Banchet, I.G.C. (Ida Gerri Christina) on 23/06/2022.
 //
-// Login screen code is from the https://betterprogramming.pub/how-to-build-ios-uis-programmatically-e0c4be2c3f24 tutorial
 
 import UIKit
 
+protocol LoginScreenViewControllerDelegate: AnyObject {
+    func goToOverview()
+}
+
 final class LoginScreenViewController: UIViewController, LoginScreenViewDelegate {
+    
+    // MARK: - Internal properties
+    
+    weak var delegate: LoginScreenViewControllerDelegate?
     
     var loginScreenView: LoginScreenView?
     
@@ -19,15 +26,7 @@ final class LoginScreenViewController: UIViewController, LoginScreenViewDelegate
     }
     
     func didTapLoginButton() {
-        presentOverview()
-    }
-    
-    func presentOverview() {
-        let rootViewController = OverviewViewController()
-        rootViewController.title = "This is the overview"
-        let navigationViewController = UINavigationController(rootViewController: rootViewController)
-        navigationViewController.modalPresentationStyle = .fullScreen
-        present(navigationViewController, animated: true)
+        delegate?.goToOverview()
     }
     
 }

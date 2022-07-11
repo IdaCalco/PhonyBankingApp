@@ -4,7 +4,11 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>New item - 2</key>
+		<dict/>
 		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
 		<false/>
 		<key>UISceneConfigurations</key>
 		<dict>

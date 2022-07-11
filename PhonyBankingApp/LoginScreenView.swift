@@ -11,9 +11,10 @@ protocol LoginScreenViewDelegate: AnyObject {
     func didTapLoginButton()
 }
 
+// In een final class kan je in principe wel bij variabelen en functies die niet private zijn, maar je kan ze niet aanpassen/overriden toch?
 final class LoginScreenView: UIView {
     
-    enum Constants {
+    private enum Constants {
         static let defaultCornerRadius: CGFloat = 5
         static let defaultBorderWidth: CGFloat = 1
         static let buttonBorderWidth: CGFloat = 2
@@ -23,7 +24,7 @@ final class LoginScreenView: UIView {
     
     weak var delegate: LoginScreenViewDelegate?
     
-    let loginLabel: UILabel = {
+    private let loginLabel: UILabel = {
         let label = UILabel()
         label.text = "Login"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +33,9 @@ final class LoginScreenView: UIView {
         return label
     }()
     
-    let usernameTextField: UITextField = {
+    // Ik zou fot usernameTextfield, passwordTextField en loginButton een soort setConstraints functie kunnen schrijven net als
+    // in PaymentAccountView, maar ik weet niet of dat het nou beter maakt. Het is korter, maar misschien iets minder duidelijk
+    private let usernameTextField: UITextField = {
         let textField = PaddedTextField()
         textField.placeholder = "Username"
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -45,7 +48,7 @@ final class LoginScreenView: UIView {
         return textField
     }()
     
-    let passwordTextField: UITextField = {
+    private let passwordTextField: UITextField = {
         let textField = PaddedTextField()
         textField.placeholder = "Password"
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +61,7 @@ final class LoginScreenView: UIView {
         return textField
     }()
     
-    lazy var loginButton: UIButton = {
+    private var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -67,8 +70,10 @@ final class LoginScreenView: UIView {
         button.layer.cornerRadius = Constants.defaultCornerRadius
         button.layer.borderWidth = Constants.buttonBorderWidth
         button.layer.borderColor = UIColor.black.cgColor
+        // Waarom krijg ik deze compiler warning? -> 'self' refers to the method 'LoginScreenView.self', which may be unexpected
+        // Wanneer ik 'LoginScreenView.self' gebruik om deze warning weg te krijgen kan ik niet meer naar het volgende scherm
         button.addTarget(self, action: #selector(didTapLoginButton), for: UIControl.Event.touchUpInside)
-        
+
         return button
     }()
     
@@ -86,65 +91,42 @@ final class LoginScreenView: UIView {
         delegate?.didTapLoginButton()
     }
     
-    func setupView() {
-        addSubview(loginLabel)
-        addSubview(usernameTextField)
-        addSubview(passwordTextField)
-        addSubview(loginButton)
+    private func setupView() {
+        addSubviews(loginLabel, usernameTextField, passwordTextField, loginButton)
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            // Login label
+            loginLabel.topAnchor.constraint(equalTo: topAnchor, constant: 40),
+            loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            loginLabel.widthAnchor.constraint(equalToConstant: 300),
+            loginLabel.heightAnchor.constraint(equalToConstant: 40)
+            ])
+            
+        NSLayoutConstraint.activate([
+            // Login button
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
+            loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            loginButton.widthAnchor.constraint(equalToConstant: 100),
+            loginButton.heightAnchor.constraint(equalToConstant: 30)
+        ])
+            
+        NSLayoutConstraint.activate([
+            // Username textfield
+            usernameTextField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor),
+            usernameTextField.centerXAnchor.constraint(equalTo: centerXAnchor),
+            usernameTextField.widthAnchor.constraint(equalToConstant: 300),
+            usernameTextField.heightAnchor.constraint(equalToConstant: 40)
+        ])
         
-        setupUsernameTextField()
-        setupLoginLabel()
-        setupPasswordTextField()
-        setupLoginButton()
+        NSLayoutConstraint.activate([
+            // Password textfield
+            passwordTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 40),
+            passwordTextField.centerXAnchor.constraint(equalTo: centerXAnchor),
+            passwordTextField.widthAnchor.constraint(equalToConstant: 300),
+            passwordTextField.heightAnchor.constraint(equalToConstant: 40)
+        ])
     }
-    
-    func setupLoginLabel() {
-        loginLabel.topAnchor.constraint(equalTo: topAnchor, constant: 40).isActive = true
-        loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        loginLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        loginLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-    }
-    
-    func setupUsernameTextField() {
-        usernameTextField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor).isActive = true
-        usernameTextField.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        usernameTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        usernameTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
-    }
-    
-    func setupPasswordTextField() {
-        passwordTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 40).isActive = true
-        passwordTextField.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        passwordTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        passwordTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
-    }
-    
-    func setupLoginButton() {
-        loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40).isActive = true
-        loginButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        loginButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        loginButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
-    }
-//    
-//    let constraints = [
-//        scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-//        scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
-//        scrollView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-//        scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
-//
-//        cardView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-//        
-//        contentView.topAnchor.constraint(equalTo: cardView.topAnchor, constant: Layout.contentViewTopSpacing),
-//        contentView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor),
-//        contentView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor),
-//        
-//        subview.view.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant: subview.edgeInsets.top),
-//        subview.view.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: subview.edgeInsets.left),
-//        subview.view.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: subview.edgeInsets.bottom),
-//        subview.view.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: subview.edgeInsets.right)
-//    ]
-//    
-//    NSLayoutConstraint.activate(constraints)
-//}
-    
 }

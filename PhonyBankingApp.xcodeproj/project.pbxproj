@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AB7AEA092865F728007DEB23 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AEA082865F728007DEB23 /* PaddedTextField.swift */; };
+		DF46AB412875D4F900277FE3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46AB402875D4F900277FE3 /* UIView+Extensions.swift */; };
+		DF46AB432876D5F400277FE3 /* InsuranceAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46AB422876D5F400277FE3 /* InsuranceAccountModel.swift */; };
+		DF46AB45287823B700277FE3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46AB44287823B700277FE3 /* AppCoordinator.swift */; };
+		DF4707092875703B00406B1C /* PaymentAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4707082875703B00406B1C /* PaymentAccountView.swift */; };
+		DF47070B287583D500406B1C /* PaymentAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47070A287583D500406B1C /* PaymentAccountModel.swift */; };
+		DFE25D72287C695A00B5AE1C /* OverviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE25D71287C695A00B5AE1C /* OverviewCoordinator.swift */; };
 		DFF5FA04286466C60045697B /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF5FA03286466C60045697B /* LoginScreenView.swift */; };
 		DFF5FA06286496600045697B /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF5FA05286496600045697B /* OverviewViewController.swift */; };
 		DFF88D1928644E950015C721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF88D1828644E950015C721 /* AppDelegate.swift */; };
@@ -39,6 +45,12 @@
 
 /* Begin PBXFileReference section */
 		AB7AEA082865F728007DEB23 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		DF46AB402875D4F900277FE3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		DF46AB422876D5F400277FE3 /* InsuranceAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceAccountModel.swift; sourceTree = "<group>"; };
+		DF46AB44287823B700277FE3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DF4707082875703B00406B1C /* PaymentAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccountView.swift; sourceTree = "<group>"; };
+		DF47070A287583D500406B1C /* PaymentAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccountModel.swift; sourceTree = "<group>"; };
+		DFE25D71287C695A00B5AE1C /* OverviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCoordinator.swift; sourceTree = "<group>"; };
 		DFF5FA03286466C60045697B /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		DFF5FA05286496600045697B /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		DFF88D1528644E950015C721 /* PhonyBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonyBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,10 +117,16 @@
 			children = (
 				DFF88D1828644E950015C721 /* AppDelegate.swift */,
 				DFF88D1A28644E950015C721 /* SceneDelegate.swift */,
+				DF46AB44287823B700277FE3 /* AppCoordinator.swift */,
+				DFE25D71287C695A00B5AE1C /* OverviewCoordinator.swift */,
 				DFF88D1C28644E950015C721 /* LoginScreenViewController.swift */,
-				DFF5FA03286466C60045697B /* LoginScreenView.swift */,
 				DFF5FA05286496600045697B /* OverviewViewController.swift */,
+				DFF5FA03286466C60045697B /* LoginScreenView.swift */,
+				DF4707082875703B00406B1C /* PaymentAccountView.swift */,
 				AB7AEA082865F728007DEB23 /* PaddedTextField.swift */,
+				DF47070A287583D500406B1C /* PaymentAccountModel.swift */,
+				DF46AB422876D5F400277FE3 /* InsuranceAccountModel.swift */,
+				DF46AB402875D4F900277FE3 /* UIView+Extensions.swift */,
 				DFF88D2128644E960015C721 /* Assets.xcassets */,
 				DFF88D2328644E960015C721 /* LaunchScreen.storyboard */,
 				DFF88D2628644E960015C721 /* Info.plist */,
@@ -263,10 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF47070B287583D500406B1C /* PaymentAccountModel.swift in Sources */,
 				DFF5FA04286466C60045697B /* LoginScreenView.swift in Sources */,
+				DF46AB432876D5F400277FE3 /* InsuranceAccountModel.swift in Sources */,
+				DFE25D72287C695A00B5AE1C /* OverviewCoordinator.swift in Sources */,
 				AB7AEA092865F728007DEB23 /* PaddedTextField.swift in Sources */,
+				DF46AB45287823B700277FE3 /* AppCoordinator.swift in Sources */,
+				DF46AB412875D4F900277FE3 /* UIView+Extensions.swift in Sources */,
 				DFF88D1D28644E950015C721 /* LoginScreenViewController.swift in Sources */,
 				DFF5FA06286496600045697B /* OverviewViewController.swift in Sources */,
+				DF4707092875703B00406B1C /* PaymentAccountView.swift in Sources */,
 				DFF88D1928644E950015C721 /* AppDelegate.swift in Sources */,
 				DFF88D1B28644E950015C721 /* SceneDelegate.swift in Sources */,
 			);
@@ -444,8 +468,9 @@
 				INFOPLIST_FILE = PhonyBankingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,8 +496,9 @@
 				INFOPLIST_FILE = PhonyBankingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
