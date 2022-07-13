@@ -25,7 +25,7 @@ final class LoginScreenViewController: UIViewController, LoginScreenViewDelegate
         view = loginScreenView
     }
     
-    func didTapLoginButton() {
+    func didTapLoginButton(_ sender: LoginScreenView) {
         delegate?.goToOverview()
     }
     

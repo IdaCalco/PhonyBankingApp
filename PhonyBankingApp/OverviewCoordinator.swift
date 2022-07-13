@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// TODO: This class is not used anywhere.
 final class OverviewCoordinator: OverviewViewControllerDelegate {
     
     private let navigationController: UINavigationController

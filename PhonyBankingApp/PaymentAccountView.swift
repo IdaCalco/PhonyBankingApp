@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 
+// TODO: samen verder doornemen
 final class PaymentAccountView: UIView {
+    
+    // TODO: You can put these in a "Constants" enum like we did in the other view classes.
     private let padding: CGFloat = 6
     private let fontSizeLabelLarge: CGFloat = 18
     private let fontSizeLabelSmall: CGFloat = 16
@@ -17,6 +20,7 @@ final class PaymentAccountView: UIView {
     private var textLabelAmount = UILabel()
     private var textLabelInsurance = UILabel()
 
+    // TODO: These don't have to be public
     public convenience init(with type: PaymentAccountType) {
         self.init(frame: .zero)
         configurePaymentAccount(with: type)
@@ -45,6 +49,8 @@ final class PaymentAccountView: UIView {
         addSubviews(textLabelAccountHolder, textLabelAmount, textLabelInsurance)
     }
     
+    // TODO: This naming is deceiving, as you're not setting any constraints here. You're setting properties of the UILabel.
+    // For consistency and readability you could consider to create the labels in the same way that we have in the LoginView.
     private func setLabelConstraints(type: UILabel, fontSize: CGFloat) {
         type.font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
         type.textAlignment = .left

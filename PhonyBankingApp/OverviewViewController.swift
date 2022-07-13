@@ -14,12 +14,15 @@ protocol OverviewViewControllerDelegate: AnyObject {
 
 final class OverviewViewController: UIViewController, OverviewViewControllerDelegate {
     // Waarom moet ik hier de foToAccountOverview schrijven en kan dat niet net als in de LoginScreenViewController alleen in de bovenstaande protocol?
+    // ---> Jou class conformed aan de OverviewViewControllerDelegate protocol. Dan moet je deze functie implementeren.
+    // Je kan dit verwijderen. De OverviewCoordinator is de delegate van deze class.
     func goToAccountOverview() {
     
     }
     
     weak var delegate: OverviewViewControllerDelegate?
 
+    // TODO: All these properties can be "let".
     private var currentAccount1: PaymentAccountView = {
         let currentAccount = PaymentAccountView(with: .singleAccount)
         currentAccount.translatesAutoresizingMaskIntoConstraints = false

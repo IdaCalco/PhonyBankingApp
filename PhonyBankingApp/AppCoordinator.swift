@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
+// TODO: Create folders within the PhonyBankingApp folder to make it easier to navigate/find classes.
+// As an example I've put all files related to login into one folder.
+
 final class AppCoordinator: LoginScreenViewControllerDelegate {
-    
+
     private let navigationController: UINavigationController
     
     private var loginScreenViewController: LoginScreenViewController?
@@ -32,3 +35,17 @@ final class AppCoordinator: LoginScreenViewControllerDelegate {
     }
 
 }
+
+/*
+ 
+ Future ideas:
+ 
+ ---------------
+ 
+ Now when we go from the login screen to the overview screen, we're able to go back to the login screen
+ This is not something we want. How can we fix that?
+ TODO: Make sure the user is not able to navigate back to the login screen (+ create log out button).
+ 
+ ---------------
+ 
+ */
