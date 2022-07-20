@@ -22,12 +22,11 @@ final class OverviewViewController: UIViewController, OverviewViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupViews()
+
         view.backgroundColor = .white
     }
     
     override func loadView() {
-
         self.overviewView = OverviewView(productViews: [])
         overviewView?.delegate = self
         view = overviewView
@@ -40,11 +39,4 @@ final class OverviewViewController: UIViewController, OverviewViewDelegate {
 //    public func configureInsuranceAccount(with type: InsuranceAccountType) {
 //        InsuranceAccount.getInsuranceDetails(for: type)
 //    }
-    
-    // MARK: - Setting Views
-    
-//    func setupViews() {
-//        view.addSubviews(productView1, productView2)
-//    }
-
 }

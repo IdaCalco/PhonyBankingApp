@@ -12,6 +12,9 @@ final class ProductView: UIView {
     
     // MARK: - Associated types & constants
     
+    // TODO: Add stack view as well, just like in OverviewView
+    // TODO: Play with debug view hierachy 
+    
     private enum Constants {
         static let padding: CGFloat = 6
         static let fontSizeLabelLarge: CGFloat = 18
@@ -71,10 +74,10 @@ final class ProductView: UIView {
     
     private func setupViews() {
         // Add views to hierarchy
-        translatesAutoresizingMaskIntoConstraints = false
         addSubviews(productNameLabel, amountLabel, productHolderLabel)
     }
     
+    // TODO: This can all be deleted, only constraint for stackview needed
     private func setupConstraints() {
         // Layout views
         NSLayoutConstraint.activate([
@@ -88,7 +91,8 @@ final class ProductView: UIView {
             
             productNameLabel.topAnchor.constraint(equalTo: amountLabel.bottomAnchor, constant: Constants.padding),
             productNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor,constant: Constants.padding),
-            productNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -Constants.padding)
+            productNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -Constants.padding),
+            productNameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Constants.padding)
         ])
         
         // TODO: Put this at the top

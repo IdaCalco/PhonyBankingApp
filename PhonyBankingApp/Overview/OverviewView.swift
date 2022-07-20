@@ -23,6 +23,8 @@ final class OverviewView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 5
+        // TODO: play with different distrubution types
+        stackView.distribution = .fillProportionally
         
         return stackView
     }()
@@ -39,26 +41,7 @@ final class OverviewView: UIView {
 
         return button
     }()
-    
-//    var currentAccount1: ProductView = {
-//        let currentAccount = ProductView(productName: "Test", productHolder: "Test naam", amount: "100 euro")
-//        return currentAccount
-//    }()
-////
-//    var currentAccount2: ProductView = {
-//        let currentAccount = ProductView()
-//        return currentAccount
-//    }()
-//    var insurance1: ProductView = {
-//        let insurance = ProductView()
-//        return insurance
-//    }()
-//    var insurance2: ProductView = {
-//        let insurance = ProductView()
-//        return insurance
-//    }()
 
-    // TODO: UIStackView voor product views aanmaken
     private let productViews: [ProductView]
     
     // MARK: Object Lifecycle
@@ -66,8 +49,7 @@ final class OverviewView: UIView {
     init(productViews: [ProductView]) {
         self.productViews = [ProductView(productName: "Test account", productHolder: "Test naam", amount: "100 euro"), ProductView(productName: "Test account2", productHolder: "Test naam2", amount: "200 euro")]
         super.init(frame: .zero)
-        //setupProductViews()
-        
+
         setupViews()
         setupConstraints()
     }
@@ -75,16 +57,10 @@ final class OverviewView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-//    private func setupProductViews() {
-//        //currentAccount1 =
-//        productViews = [currentAccount1, currentAccount2, insurance1, insurance2]
-//    }
-//
+
     private func setupViews() {
-        translatesAutoresizingMaskIntoConstraints = false
-        addSubview(logoutButton)
         addSubview(stackView)
+        addSubview(logoutButton)
     }
     
     // MARK: - Setting Constraints
@@ -96,64 +72,15 @@ final class OverviewView: UIView {
             
             // logout button
             logoutButton.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor),
+            logoutButton.trailingAnchor.constraint(equalTo: trailingAnchor),
             logoutButton.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            logoutButton.heightAnchor.constraint(equalToConstant: 24),
             
             // stack view
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.topAnchor.constraint(equalTo: logoutButton.bottomAnchor),
-            //stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
-            //stackView.heightAnchor.constraint(equalToConstant: viewFrame.height)
-            
-//
-//            // current account 1
-//            currentAccount1.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            currentAccount1.topAnchor.constraint(equalTo: logoutButton.bottomAnchor),
-//            currentAccount1.widthAnchor.constraint(equalToConstant: viewFrame.width),
-//            currentAccount1.heightAnchor.constraint(equalToConstant: viewFrame.height/10),
-//
-//            // current account 2
-//            currentAccount2.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            currentAccount2.topAnchor.constraint(equalTo: currentAccount1.bottomAnchor),
-//            currentAccount2.widthAnchor.constraint(equalToConstant: viewFrame.width),
-//            currentAccount2.heightAnchor.constraint(equalToConstant: viewFrame.height/10),
-//            currentAccount2.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//
-//            // insurance 1
-//            insurance1.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            insurance1.topAnchor.constraint(equalTo: currentAccount2.bottomAnchor),
-//            insurance1.widthAnchor.constraint(equalToConstant: viewFrame.width),
-//            insurance1.heightAnchor.constraint(equalToConstant: viewFrame.height/10),
-//            insurance1.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//
-//            // insurance 2
-//            insurance2.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor),
-//            insurance2.topAnchor.constraint(equalTo: insurance1.bottomAnchor),
-//            insurance2.widthAnchor.constraint(equalToConstant: viewFrame.width),
-//            insurance2.heightAnchor.constraint(equalToConstant: viewFrame.height/10),
-//            insurance2.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//            insurance2.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
     }
 }
-
-
-// MARK: - View Configuration
-
-
-//// dit naar viewcontroller
-//extension OverviewView {
-//    public func configurePaymentAccount(with type: PaymentAccountType) {
-//        let model = PaymentAccount.getPaymentAccountDetails(for: type)
-//        productHolderLabel.text = model.accountHolder
-//        amountLabel.text = model.accountAmount
-//        backgroundColor = model.backgroundColor
-//    }
-//    
-//    public func configureInsuranceAccount(with type: InsuranceAccountType) {
-//        let model = InsuranceAccount.getInsuranceDetails(for: type)
-//        productNameLabel.text = model.insuranceName
-//        backgroundColor = model.backgroundColor
-//    }
-//}
-
