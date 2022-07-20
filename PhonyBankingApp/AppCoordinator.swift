@@ -9,28 +9,35 @@ import Foundation
 import UIKit
 
 // TODO: Create folders within the PhonyBankingApp folder to make it easier to navigate/find classes.
-// As an example I've put all files related to login into one folder.
 
-final class AppCoordinator: LoginScreenViewControllerDelegate {
+final class AppCoordinator: LoginViewControllerDelegate {
+    
+    // MARK: Private properties
 
     private let navigationController: UINavigationController
     
-    private var loginScreenViewController: LoginScreenViewController?
+    private var loginViewController: LoginViewController?
+    private var overviewViewController: OverviewViewController?
+    
+    // MARK: - Object Lifecycle
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    // Start login flow
+    // MARK: - Internal methods
     func start() {
-        let loginScreenViewController = LoginScreenViewController()
-        self.loginScreenViewController = loginScreenViewController
-        loginScreenViewController.delegate = self
-        navigationController.pushViewController(loginScreenViewController, animated: true)
+        let loginViewController = LoginViewController()
+        self.loginViewController = loginViewController
+        loginViewController.delegate = self
+        navigationController.pushViewController(loginViewController, animated: true)
     }
     
     func goToOverview() {
         let overviewViewController = OverviewViewController()
+        self.overviewViewController = overviewViewController
+        //overviewViewController.delegate = self
+        overviewViewController.navigationItem.hidesBackButton = true
         navigationController.pushViewController(overviewViewController, animated: true)
     }
 

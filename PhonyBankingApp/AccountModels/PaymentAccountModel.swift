@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: - Payment account type string
+
 enum PaymentAccountType: String {
     case singleAccount = "Mw I Segond von Banchet"
     case jointAccount = "Mw I Segond von Banchet, Hr S"
@@ -38,15 +40,22 @@ enum PaymentAccountType: String {
 }
 
 class PaymentAccount {
+    
+    // MARK: - Internal properties
+    
     var accountHolder: String
     let accountAmount: String
     var backgroundColor: UIColor
+    
+    // MARK: - Object lifecycle
     
     init(accountHolder: String, accountAmount: String, backgroundColor: UIColor) {
         self.accountHolder = accountHolder
         self.accountAmount = accountAmount
         self.backgroundColor = backgroundColor
     }
+    
+    // MARK: - Public functions
     
     public static func getPaymentAccountDetails(for type: PaymentAccountType) -> PaymentAccount {
         return PaymentAccount(

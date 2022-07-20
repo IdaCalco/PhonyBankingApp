@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: - insurande account type string
+
 enum InsuranceAccountType: String {
     case legalInsurance = "Legal insurance NN"
     case contentsInsurance = "Contents insurance Univé"
@@ -24,13 +26,20 @@ enum InsuranceAccountType: String {
 }
 
 class InsuranceAccount {
+    
+    // MARK: Internal properties
+    
     var insuranceName: String
     var backgroundColor: UIColor
+    
+    // MARK: - Object lifecycle
     
     init(insuranceName: String, backgroundColor: UIColor) {
         self.insuranceName = insuranceName
         self.backgroundColor = backgroundColor
     }
+    
+    // MARK: - Public functions
     
     public static func getInsuranceDetails(for type: InsuranceAccountType) -> InsuranceAccount {
         return InsuranceAccount(

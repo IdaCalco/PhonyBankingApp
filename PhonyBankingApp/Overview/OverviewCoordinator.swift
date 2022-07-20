@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 // TODO: This class is not used anywhere.
+// Ida: I'm aware, but there is no use of it right now when there is no next screen, right?
 final class OverviewCoordinator: OverviewViewControllerDelegate {
+    func goToLogin(_ sender: OverviewViewController) {
+    
+    }
     
     private let navigationController: UINavigationController
     
@@ -19,7 +23,7 @@ final class OverviewCoordinator: OverviewViewControllerDelegate {
         self.navigationController = navigationController
     }
     
-    func goToAccountOverview() {
+    func goToAccountOverview(_ sender: OverviewViewController) {
         // Should lead to viewcontroller yet to be made to show the selected account
         let overviewViewController = OverviewViewController()
         self.overviewViewController = overviewViewController
